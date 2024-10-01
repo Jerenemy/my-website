@@ -72,7 +72,7 @@ body {
 
 .hero {
     height: 100vh; /* Full Viewport Height */
-    background: url('assets/images/hero-bg.jpg') center/cover no-repeat; /* Background Image */
+    background: url('assets/images/hero-bg.png') center/cover no-repeat; /* Background Image */
     display: flex;
     justify-content: center;
     align-items: center;

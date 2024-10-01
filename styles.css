@@ -11,36 +11,35 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Title Page Styles */
-.title-page {
-    background-color: #333;
+/* Intro Section (Initial Screen) */
+.intro {
+    background-color: #555;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
+    position: relative;
 }
 
-.title-page h1 {
+.intro h1 {
     color: white;
-    font-size: 5em;
+    font-size: 6em;
     transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Content Styles */
-.content {
-    display: none;
-    height: 100vh;
+/* Hidden Section (Appears After Scroll) */
+.hidden-section {
     background-color: #eaeaea;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
-.content h2 {
+.hidden-section h2 {
     color: black;
-    font-size: 3em;
+    font-size: 4em;
 }

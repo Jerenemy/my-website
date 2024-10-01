@@ -3,33 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremy's Cool Website</title>
+    <title>Jeremy Zay | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home">Jeremy Zay</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Welcome to My Awesome Website!</h1>
-    
-    <!-- Logo with Animation -->
-    <img src="images/bird_1.png" alt="My Logo" width="200" height="200">
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to My Professional Portfolio</h1>
+        <p>I'm Jeremy Zay, a passionate software developer specializing in web development and design.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </section>
 
-    <!-- Clickable Logo -->
-    <a href="https://example.com" target="_blank">
-        <img src="images/bird_3.png" alt="Clickable Logo" width="200" height="200">
-    </a>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <img src="images/profile.jpg" alt="Jeremy Zay" class="profile-pic">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Jeremy, a software developer with a knack for creating efficient and scalable web applications. With a strong foundation in JavaScript, Python, and modern frameworks like React and Node.js, I enjoy tackling complex problems and continuously learning new technologies.
+                </p>
+                <p>
+                    When I'm not coding, I enjoy hiking, reading tech blogs, and contributing to open-source projects.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dummy-linkedin" target="_blank">
+                        <img src="images/linkedin-icon.png" alt="LinkedIn" width="40" height="40">
+                    </a>
+                    <a href="https://github.com/dummy-github" target="_blank">
+                        <img src="images/github-icon.png" alt="GitHub" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1" class="project-image">
+                <h3>Project One</h3>
+                <p>A brief description of Project One. Highlighting technologies used and key features.</p>
+                <a href="https://github.com/dummy-github/project-one" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2" class="project-image">
+                <h3>Project Two</h3>
+                <p>A brief description of Project Two. Highlighting technologies used and key features.</p>
+                <a href="https://github.com/dummy-github/project-two" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Project 3" class="project-image">
+                <h3>Project Three</h3>
+                <p>A brief description of Project Three. Highlighting technologies used and key features.</p>
+                <a href="https://github.com/dummy-github/project-three" target="_blank" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of the platforms below:</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/dummy-linkedin" target="_blank" class="contact-btn">LinkedIn</a>
+            <a href="https://github.com/dummy-github" target="_blank" class="contact-btn">GitHub</a>
+            <a href="mailto:jeremy.zay@example.com" class="contact-btn">Email</a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>Created with 💻 and ☕ by Jeremy Zay</p>
+        <p>© 2024 Jeremy Zay. Built with 💻 and ☕.</p>
     </footer>
 
 </body>

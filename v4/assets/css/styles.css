@@ -35,7 +35,7 @@ body {
     padding-top: 60px; /* Adjust based on navbar height */
     /* Existing styles */
     height: 100vh;
-    background: url('../images/background.jpg') center center/cover no-repeat;
+    background: url('./images/background.jpg') center center/cover no-repeat;
     background-color: #ff0000; /* Bright Red for testing */
 }
 

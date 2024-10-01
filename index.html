@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Jeremy Zay, showcasing my portfolio, blog, and contact information.">
+    <meta name="description" content="Personal website of Jeremy Zay, showcasing my portfolio, skills, blog, and contact information.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>Jeremy Zay - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Jeremy Zay's Personal Website</h1>
+        <h1>Jeremy Zay</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,33 +23,101 @@
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Jeremy Zay, a computer science major at Wesleyan University, passionate about infographics, modeling, and programming in Python. Welcome to my personal website!</p>
-        </section>
-
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Description of the project, technologies used, and any notable features.</p>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Hi, I'm Jeremy, a Developer and Data Enthusiast</h2>
+                <p>Passionate about coding, modeling, and bringing ideas to life through technology.</p>
+                <a href="#contact" class="button">Let's Connect</a>
             </div>
         </section>
 
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Here you'll find my thoughts on technology, personal experiences, and tutorials.</p>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I’m a junior at Wesleyan University, majoring in Computer Science with a passion for Python, infographics, and data modeling. I also work part-time at Thayer Lab, focusing on HPC and parallel processing.</p>
         </section>
 
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <p>Python, OCaml, C, Bash, JavaScript</p>
+                </div>
+                <div class="skill">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Git, GitHub, Vercel, Cloudflare</p>
+                </div>
+                <div class="skill">
+                    <h3>Data Analysis</h3>
+                    <p>Pandas, NumPy, Machine Learning, HLM, DGL</p>
+                </div>
+                <div class="skill">
+                    <h3>Tools & Frameworks</h3>
+                    <p>VSCode, Simplify, PyTorch, HPC Clusters</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-gallery">
+                <div class="project">
+                    <h3>Project 1: Drug Design</h3>
+                    <p>Developed a deep learning model for drug design using PyTorch and DGL.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Interactive Dashboard</h3>
+                    <p>Created a data dashboard to visualize machine learning results using Dash and Plotly.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3: Personal Website</h3>
+                    <p>This website! Built with HTML, CSS, and GitHub Pages hosting.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Understanding Parallel Processing in HPC</h3>
+                <p>Discover the basics of parallel processing and how to optimize performance on high-performance computers...</p>
+                <a href="#">Read more</a>
+            </article>
+            <article>
+                <h3>Hierarchical Linear Models: An Introduction</h3>
+                <p>An accessible introduction to HLM, with examples from real-world data analysis projects...</p>
+                <a href="#">Read more</a>
+            </article>
+            <article>
+                <h3>Python Object-Oriented Programming Tips</h3>
+                <p>Maximize the power of OOP in Python with these tips and tricks, from a Python enthusiast...</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Email: jeremy.zay@wesleyan.edu</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jeremy-zay">linkedin.com/in/jeremy-zay</a></p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Jeremy Zay. All rights reserved.</p>
+        <p>Follow me on <a href="https://www.linkedin.com/in/jeremy-zay">LinkedIn</a> | <a href="https://github.com/jeremyzay">GitHub</a></p>
     </footer>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* General */
 html, body {
     height: 100%;
     margin: 0;
@@ -5,7 +6,7 @@ html, body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Ensures header stays on top */
+    z-index: 1000;
 }
 
 nav ul {
@@ -28,7 +29,6 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -37,19 +37,101 @@ nav ul li a {
     text-decoration: none;
 }
 
+main {
+    padding-top: 70px; /* Adjust for fixed header */
+}
+
+/* Hero Section */
+#hero {
+    background-color: #282c34;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#hero .button {
+    background-color: #61dafb;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* About Section */
 section {
-    padding: 60px 20px; /* Adds space to clear the fixed header */
-    margin: 10px auto;
+    padding: 40px 20px;
+    margin: 20px auto;
     background-color: white;
     border-radius: 5px;
     max-width: 1200px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-#about, #portfolio, #blog, #contact {
-    min-height: 100vh; /* Makes each section take up the full viewport height */
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
 }
 
+.skill {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Portfolio Section */
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+/* Blog Section */
+article {
+    margin-bottom: 20px;
+}
+
+article a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px 0;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -58,19 +140,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Ensures the body height extends with content */
-body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; /* Takes up remaining space to allow scrolling */
-}
-
-footer {
-    margin-top: auto;
 }

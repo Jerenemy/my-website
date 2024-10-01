@@ -1,45 +1,57 @@
-/* General Styles */
-html, body {
+/* Reset default margins and paddings */
+* {
     margin: 0;
     padding: 0;
+  }
+  
+  html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
     overflow-x: hidden;
-}
-
-body {
-    background-color: #f4f4f4;
-}
-
-/* Intro Section (Initial Screen) */
-.intro {
-    background-color: #555;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Intro Section */
+  .intro {
+    background-color: gray;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.intro h1 {
+  }
+  
+  .intro h1 {
     color: white;
     font-size: 6em;
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-/* Hidden Section (Appears After Scroll) */
-.hidden-section {
-    background-color: #eaeaea;
-    height: 100vh;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
+  /* Content Section */
+  .content {
+    background-color: lightgray;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.hidden-section h2 {
+  }
+  
+  .content h1 {
     color: black;
     font-size: 4em;
-}
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  /* Scrolled State */
+  body.scrolled .intro h1 {
+    opacity: 0;
+  }
+  
+  body.scrolled .content h1 {
+    opacity: 1;
+  }
+  

@@ -1,11 +1,11 @@
 window.addEventListener('scroll', function() {
-    const intro = document.getElementById('intro');
-    const hiddenSection = document.getElementById('hidden-section');
-
-    if (window.scrollY > 50) {
-        intro.style.opacity = '0';
-        intro.style.transform = 'translateY(-50px)';
-        hiddenSection.style.opacity = '1';
-        hiddenSection.style.transform = 'translateY(0)';
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+  
+    if (scrollPosition > windowHeight / 4) {
+      document.body.classList.add('scrolled');
+    } else {
+      document.body.classList.remove('scrolled');
     }
-});
+  });
+  

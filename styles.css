@@ -15,20 +15,21 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray; /* Initial background color */
+    background-color: red; /* Initial background color */
     transition: background-color 0.5s ease; /* Smooth transition */
   }
   
+  
   /* Heading styling */
   #container h1 {
-    color: white;
+    color: green;
     font-size: 6em;
     margin: 0;
   }
   
   /* Background color after scrolling */
   .scrolled {
-    background-color: lightgray; /* Background color after scrolling */
+    background-color: blue; /* Background color after scrolling */
   }
   
   /* Spacer to allow scrolling */

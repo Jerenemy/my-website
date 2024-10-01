@@ -1,9 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -11,11 +13,18 @@ header {
     color: white;
     text-align: center;
     padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures header stays on top */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
@@ -29,10 +38,16 @@ nav ul li a {
 }
 
 section {
-    padding: 20px;
-    margin: 10px;
+    padding: 60px 20px; /* Adds space to clear the fixed header */
+    margin: 10px auto;
     background-color: white;
     border-radius: 5px;
+    max-width: 1200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about, #portfolio, #blog, #contact {
+    min-height: 100vh; /* Makes each section take up the full viewport height */
 }
 
 footer {
@@ -40,4 +55,22 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ensures the body height extends with content */
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Takes up remaining space to allow scrolling */
+}
+
+footer {
+    margin-top: auto;
 }

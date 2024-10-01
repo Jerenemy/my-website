@@ -1,5 +1,152 @@
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures navbar stays on top */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+/* Adjust body padding to prevent content being hidden behind navbar */
 body {
+    padding-top: 60px; /* Adjust based on navbar height */
+    /* Existing styles */
     height: 100vh;
-    background: url('./images/background.jpg') center center/cover no-repeat;
+    background: url('../images/background.jpg') center center/cover no-repeat;
     background-color: #ff0000; /* Bright Red for testing */
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+    min-height: 100vh; /* Ensures each section takes full viewport height */
+    text-align: center;
+    color: #fff;
+}
+
+#home {
+    /* Additional styles for Home section if needed */
+}
+
+#about {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    margin-top: -100vh; /* Overlap to cover initial padding */
+}
+
+#contact {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    color: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    form input,
+    form textarea {
+        width: 80%;
+    }
+
+    section {
+        padding: 80px 10px;
+    }
+}
+
+/* Gallery Section */
+#gallery {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for contrast */
+    padding: 100px 20px;
+}
+
+#gallery h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    border-color: #ffcc00; /* Highlight border on hover */
 }

@@ -1,0 +1,16 @@
+/* styles.css */
+
+/* Reset default browser margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background image for the body */
+
+body {
+    height: 100vh;
+    background: url('assets/images/background.jpg') center center/cover no-repeat;
+    background-color: #ff0000; /* Bright Red for testing */
+}

@@ -1,57 +1,38 @@
-/* Reset default margins and paddings */
-* {
+/* Ensure the page is tall enough to scroll */
+body, html {
     margin: 0;
     padding: 0;
+    height: 200vh; /* 200% of the viewport height */
   }
   
-  html, body {
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Intro Section */
-  .intro {
-    background-color: black;
-    height: 100vh;
+  /* Container styling */
+  #container {
+    position: fixed; /* Keep the container fixed in the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    background-color: gray; /* Initial background color */
+    transition: background-color 0.5s ease; /* Smooth transition */
   }
   
-  .intro h1 {
+  /* Heading styling */
+  #container h1 {
     color: white;
     font-size: 6em;
-    opacity: 1;
-    transition: opacity 1s ease-out;
+    margin: 0;
   }
   
-  /* Content Section */
-  .content {
-    background-color: lightgray;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Background color after scrolling */
+  .scrolled {
+    background-color: lightgray; /* Background color after scrolling */
   }
   
-  .content h1 {
-    color: black;
-    font-size: 4em;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-  }
-  
-  /* Scrolled State */
-  body.scrolled .intro h1 {
-    opacity: 0;
-  }
-  
-  body.scrolled .content h1 {
-    opacity: 1;
+  /* Spacer to allow scrolling */
+  .spacer {
+    height: 200vh; /* Additional space to scroll into */
   }
   

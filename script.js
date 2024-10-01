@@ -1,11 +1,12 @@
 window.addEventListener('scroll', function() {
+    const container = document.getElementById('container');
     const scrollPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
+    const triggerPoint = window.innerHeight / 4; // Change color after scrolling 25% of viewport height
   
-    if (scrollPosition > windowHeight / 4) {
-      document.body.classList.add('scrolled');
+    if (scrollPosition > triggerPoint) {
+      container.classList.add('scrolled');
     } else {
-      document.body.classList.remove('scrolled');
+      container.classList.remove('scrolled');
     }
   });
   
